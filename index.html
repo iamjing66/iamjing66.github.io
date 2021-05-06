@@ -11,8 +11,13 @@ title: My Blog
     </li>
     {% endfor %}
 </ul>
-<p>共{{paginator.total_pages}}页</p>
+
+<footer>
+
+
 <p>现{{paginator.page}}页</p>
+<p>共{{paginator.total_pages}}页</p>
+
 
 {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
@@ -23,3 +28,4 @@ title: My Blog
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
 {% endfor %}
+</footer>
