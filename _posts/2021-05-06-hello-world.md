@@ -16,9 +16,4 @@ print("Hello World!")
 
 <hr>
 
-##### 时间: 
-{{date}}
-{{ post.date | date_to_string }}
-
-{{page.previous}}
-{{page.next}}
+##### 时间: 2021-5-6 16:09:50
