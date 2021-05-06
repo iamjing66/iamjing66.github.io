@@ -3,11 +3,23 @@ layout: default
 title: My Blog
 ---
 <h2>{{ page.title }}</h2>
-<p>最新文章</p>
+<p>New</p>
 <ul>
-    {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% for post in paginator.posts %}
+    <li>{{ post.date | date_to_string }}
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
 </ul>
 <p>共{{paginator.total_pages}}页</p>
 <p>现{{paginator.page}}页</p>
+
+{% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="active">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+{% endfor %}
