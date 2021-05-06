@@ -1,5 +1,6 @@
 ---
-tag:blog
+tag:
+    -blog
 ---
 # Hello World!
 ## 我的第一篇github.io blog
