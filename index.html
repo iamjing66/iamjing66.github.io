@@ -9,5 +9,5 @@ title: My Blog
     <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
-<p>共</p>{{paginator.total_pages}}<p>页</p>
-<p>现</p>{{paginator.page}}<p>页</p>
+<p>共{{paginator.total_pages}}页</p>
+<p>现{{paginator.page}}页</p>
