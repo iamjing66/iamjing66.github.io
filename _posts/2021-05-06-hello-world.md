@@ -2,8 +2,7 @@
 layout:     post
 title:      "Hello"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2021-5-6 15:43:59
-time:       2021-5-6 15:43:59
+category:  talk
 author:     "iamjing66"
 tags:
     "blog"
@@ -20,3 +19,6 @@ print("Hello World!")
 ##### 时间: 
 {{date}}
 {{ post.date | date_to_string }}
+
+{{page.previous}}
+{{page.next}}
