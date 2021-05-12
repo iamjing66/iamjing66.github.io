@@ -2,12 +2,7 @@
 layout: default
 title: My Blog
 ---
-<style type="text/css">
-.down_div{
-    positon:fixed;
-    bottom:0;
-}  
-</style>
+
 <h2>{{ page.title }}</h2>
 <p>New</p>
 <ul>
@@ -17,19 +12,3 @@ title: My Blog
     </li>
     {% endfor %}
 </ul>
-
-<div class="down_div">
-    <p>现{{paginator.page}}页</p>
-    <p>共{{paginator.total_pages}}页</p>
-    
-    
-    {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <span class="active">{{ page }}</span>
-        {% elsif page == 1 %}
-          <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-        {% else %}
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
-    {% endfor %}
-</div>
