@@ -5,8 +5,7 @@ subtitle:   " \"tornado demo\""
 category:  tec
 author:     "iamjing66"
 tags:
-    "python web",
-    "tornado"
+    "python web"
 ---
 
 # Tornado
