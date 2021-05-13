@@ -15,7 +15,7 @@ tags:
 <!-- 第一次接触tornado，仿照django的登录验证的demo做了tornado版的demo -->
 first tornado demo
 
-``` python
+```python
 main.py
 
 import tornado.httpserver
