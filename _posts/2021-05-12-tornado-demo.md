@@ -195,24 +195,6 @@ if __name__ == "__main__":
 
 
 
-```
-ppp.html
-
-            {% if msg %}
-                <p>{{msg}}</p>
-            {% end if %}
-        <form action="/index">
-            <button title="okok" value="login" type="submit" id="btn" onclick="setCookie()">跳转</button>
-        </form>
-    <script>
-        function setCookie() {
-            document.cookie = "msg=login";
-            }
-    </script>
-```
-
-
-
 
 <hr>
 
