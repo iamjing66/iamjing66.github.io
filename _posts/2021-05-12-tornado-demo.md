@@ -1,13 +1,12 @@
 --- 
-layout:   post
-title:   "tornado"
-subtitle:  " \"tornado demo\""
-category: tec
-author:   "iamjing66"
+layout:     post
+title:      "tornado"
+subtitle:   " \"tornado demo\""
+category:   tec
+author:     "iamjing66"
 tags:
-  "python web"
+    "python web"
 --- 
-
 
 
 # Tornado
