@@ -2,5 +2,6 @@ theme: jekyll-theme-hacker
 title: iamjing66's Persional Blog
 paginate: 5
 paginate_path: "page:num"
+favicon: /favicon.png
 plugins:
   - "jekyll-paginate"
