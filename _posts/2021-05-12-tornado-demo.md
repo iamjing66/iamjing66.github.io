@@ -1,18 +1,23 @@
 --- 
-layout:     post
-title:      "tornado"
-subtitle:   " \"tornado demo\""
-category:  tec
-author:     "iamjing66"
+layout:   post
+title:   "tornado"
+subtitle:  " \"tornado demo\""
+category: tec
+author:   "iamjing66"
 tags:
-    "python web"
+  "python web"
 --- 
+
+
 
 # Tornado
 
 ## first time tornado
 
-<!-- 第一次接触tornado，仿照django的登录验证的demo做了tornado版的demo -->
+
+
+*第一次接触tornado，仿照django的登录验证的demo做了tornado版的demo*
+
 first tornado demo
 
 ```python
@@ -189,6 +194,8 @@ if __name__ == "__main__":
     tornado.ioloop.IOLoop.instance().start()
 ```
 
+
+
 ```html
 ppp.html
 
@@ -216,6 +223,8 @@ ppp.html
 </html>
 ```
 
+
+
 ```html
 ttt.html
 
@@ -241,6 +250,10 @@ ttt.html
 </html>
 ```
 
+
+
 <hr>
 
+
 #### 时间: 2021-5-12 13:43:32
+
