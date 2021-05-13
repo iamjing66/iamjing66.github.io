@@ -196,30 +196,19 @@ if __name__ == "__main__":
 
 
 ```html
-<!-- ppp.html
+ppp.html
 
-<!DOCTYPE html>
-<html>
-    <head><title>index</title></head>
-    
-    <body>
-        <h1>Enter terms below.</h1>
-        <h2>{{now_time}}</h2>
-        
             {% if msg %}
                 <p>{{msg}}</p>
             {% end if %}
         <form action="/index">
             <button title="okok" value="login" type="submit" id="btn" onclick="setCookie()">跳转</button>
         </form>
-        
-    </body>
     <script>
         function setCookie() {
             document.cookie = "msg=login";
             }
     </script>
-</html> -->
 ```
 
 
@@ -227,7 +216,7 @@ if __name__ == "__main__":
 ```html
 ttt.html
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head><title>user</title></head>
     
@@ -246,7 +235,7 @@ ttt.html
             document.cookie = "msg=quit";
             }
     </script>
-</html> -->
+</html>
 ```
 
 
