@@ -196,7 +196,7 @@ if __name__ == "__main__":
 
 
 ```html
-ppp.html
+<!-- ppp.html
 
 <!DOCTYPE html>
 <html>
@@ -219,7 +219,7 @@ ppp.html
             document.cookie = "msg=login";
             }
     </script>
-</html>
+</html> -->
 ```
 
 
@@ -227,7 +227,7 @@ ppp.html
 ```html
 ttt.html
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head><title>user</title></head>
     
@@ -246,7 +246,7 @@ ttt.html
             document.cookie = "msg=quit";
             }
     </script>
-</html>
+</html> -->
 ```
 
 
