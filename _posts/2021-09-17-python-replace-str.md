@@ -16,8 +16,10 @@ tags:
 `背景`        
 在某项目中需要对接收过来的字符串进行转义处理
 
-* `第一次`    
+* `第一次`        
+
 ```python
+
 # exp:    
 # str_dict 为转义字典    
 str_dict = {
@@ -43,14 +45,17 @@ def str_replace1(source: str):
     return target
 
 # output: "-47"    
-```
-上面例子中没有产生问题，但是若 s1 中包含多个特殊转义字符则会出错
+```         
+
+上面例子中没有产生问题，但是若 s1 中包含多个特殊转义字符则会出错          
+
 ```python
 s1 = "<2d>46<2e>5"
 # 需要的输出是 "-46.5"
 # 若通过 str_replace1 函数
 # output: "-46.5"
-```
+```         
+
 并不能输出需要的字符串
 
 * `第二次`     
@@ -80,7 +85,8 @@ def str_replace2(source: str):
     return target
 
 # output: "-46<2e>5"
-```
+```         
+
 这里的输出还是错误？      
 因为在递归时并没有把正确的前一次结果 `target` 传入函数中       
 所以需要更改代码 `target = source.replace(k, v) ==> target = target.replace(k, v)`      
@@ -92,9 +98,11 @@ output: "-46.5"
 
 
 * `更深考虑`   
-递归会产生层数过多导致报错或者时间很长   
-称为**堆栈溢出**（英语：stack overflow）[wiki-维基百科-堆栈溢出](https://zh.wikipedia.org/wiki/%E5%A0%86%E7%96%8A%E6%BA%A2%E4%BD%8D)
-所以我在 **StackOverflow**网站中提问[Is there a better way to replace a string in python? -stackoverflow](https://stackoverflow.com/questions/69218161/is-there-a-better-way-to-replace-a-string-in-python/69218390#69218390)   
+递归会产生层数过多导致报错或者时间很长      
+
+称为**堆栈溢出**（英语：stack overflow）[wiki-维基百科-堆栈溢出](https://zh.wikipedia.org/wiki/%E5%A0%86%E7%96%8A%E6%BA%A2%E4%BD%8D)   
+所以   
+我在 **StackOverflow**网站中提问[Is there a better way to replace a string in python? -stackoverflow](https://stackoverflow.com/questions/69218161/is-there-a-better-way-to-replace-a-string-in-python/69218390#69218390)   
 获得了很多答案以及问题被判了重复扣了我2点荣誉(→_→）   
 个人认为很有用的一条答案是 [How to replace multiple substrings of a string?](https://stackoverflow.com/a/69195618/16239086)   
 
@@ -131,7 +139,7 @@ print(replacer(sample1))
 
 # output: 
 # whatever [This is one or more b], [This is three a], [This is a tag] [This is one or more b] [This is a tag]
-```
+```         
 时间复杂度 *(O(n))*
 这样去实现将字典中键对应的值替换进字符串中，达到目的。同时很多项时时间也要比递归更快。   
 很棒的方法！
