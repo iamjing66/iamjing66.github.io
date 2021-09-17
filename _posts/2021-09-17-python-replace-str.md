@@ -1,7 +1,7 @@
 --- 
 layout:     post
-title:      "一个解决 Python 字符串中替换多个值的方法"
-subtitle:   "\"Python replace str"\"
+title:      "一个解决Python字符串中替换多个值的方法"
+subtitle:   " \"Python replace str\""
 category:   tec
 author:     "iamjing66"
 tags:
@@ -9,8 +9,8 @@ tags:
 --- 
 
 # Python 中替换字符串方法       
+<hr>
 
---- 
 ### 记录一次工作中的学习      
 
 `背景`        
