@@ -16,10 +16,10 @@ tags:
 `背景`        
 在某项目中需要对接收过来的字符串进行转义处理
 
-1. `第一次`
+* `第一次`
 ```python
-# exp:
-# str_dict 为转义字典
+# exp:    
+# str_dict 为转义字典    
 str_dict = {
     "<2c>": ",",
     "<2e>": ".",
@@ -33,7 +33,7 @@ str_dict = {
 
 s1 = "<2d>47"
 
-# 第一次默认认为只有一个特殊字符所以函数为      
+# 第一次默认认为只有一个特殊字符所以函数为       
 
 def str_replace1(source: str):
     target = source
@@ -42,7 +42,7 @@ def str_replace1(source: str):
             target = source.replace(k, v)
     return target
 
-# output: "-47"
+# output: "-47"    
 ```
 上面例子中没有产生问题，但是若 s1 中包含多个特殊转义字符则会出错
 ```python
@@ -53,9 +53,10 @@ s1 = "<2d>46<2e>5"
 ```
 并不能输出需要的字符串
 
-2. `第二次`   
-经过思考，第一想法是**递归**[wiki-维基百科-递归](https://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92)
-> 在数学和计算机科学中，递归指由一种（或多种）简单的基本情况定义的一类对象或方法，并规定其他所有情况都能被还原为其基本情况
+* `第二次`     
+经过思考，第一想法是**递归**[wiki-维基百科-递归](https://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92)   
+> 在数学和计算机科学中，递归指由一种（或多种）简单的基本情况定义的一类对象或方法，并规定其他所有情况都能被还原为其基本情况          
+            
 ```python
 # 字典不变
 str_dict = {
@@ -90,7 +91,7 @@ output: "-46.5"
 ```     
 
 
-3. `更深考虑`   
+* `更深考虑`   
 递归会产生层数过多导致报错或者时间很长   
 称为**堆栈溢出**（英语：stack overflow）[wiki-维基百科-堆栈溢出](https://zh.wikipedia.org/wiki/%E5%A0%86%E7%96%8A%E6%BA%A2%E4%BD%8D)
 所以我在 **StackOverflow**网站中提问[Is there a better way to replace a string in python? -stackoverflow](https://stackoverflow.com/questions/69218161/is-there-a-better-way-to-replace-a-string-in-python/69218390#69218390)   
