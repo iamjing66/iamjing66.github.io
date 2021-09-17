@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
-title: iamjing66's Personal Blog
+title: iamjing66's Blog
 paginate: 5
 paginate_path: "page:num"
 markdown: kramdown
