@@ -29,10 +29,12 @@ str_dict = {
     "<3d>": "=",
     "<2a>": "*",
     }
-# s1 为需要进行转义的字符串
+# s1 为需要进行转义的字符串        
+
 s1 = "<2d>47"
 
-# 第一次默认认为只有一个特殊字符所以函数为
+# 第一次默认认为只有一个特殊字符所以函数为      
+
 def str_replace1(source: str):
     target = source
     for k, v in str_dict.items():
@@ -85,7 +87,8 @@ def str_replace2(source: str):
 
 ```text
 output: "-46.5"
-```
+```     
+
 
 3. `更深考虑`   
 递归会产生层数过多导致报错或者时间很长   
