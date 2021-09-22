@@ -1,6 +1,6 @@
 --- 
 layout:     post
-title:      "Hello"
+title:      "leetcode 673"
 subtitle:   " \"leetcode 673\""
 category:  leetcode
 author:     "iamjing66"
