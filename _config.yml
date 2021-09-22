@@ -1,7 +1,6 @@
 theme: jekyll-theme-hacker
 title: iamjing66's Blog
-per_page: 5
-pagination_dir: page
+paginate: 10
 paginate_path: "page:num"
 markdown: kramdown
 favicon: /favicon.png
