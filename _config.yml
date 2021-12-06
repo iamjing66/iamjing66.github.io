@@ -3,6 +3,6 @@ title: iamjing66's Blog
 paginate: 5
 paginate_path: "page:num"
 markdown: kramdown
-favicon: /favicon.png
+favicon: /favicon.ico
 plugins:
   - "jekyll-paginate"
