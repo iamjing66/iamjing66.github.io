@@ -1,9 +1,11 @@
 --- 
-layout:     post title:      "Python gcd函数"
+layout:     post
+title:      "Python gcd函数"
 subtitle:   " \"python gcd function\""
-category:  python author:     "iamjing66"
+category:  python
+author:     "iamjing66"
 tags:
-"python"
+    "python"
 ---  
 
 # Python gcd函数学习
@@ -59,8 +61,7 @@ GCD = lambda a, b: (GCD(b, a % b) if a % b else b)
 
 def gcd(a, b):
     if a % b:
-        retrun
-        gcd(b, a % b)
+        retrun gcd(b, a % b)
     else:
         return b
 ```  
