@@ -61,7 +61,7 @@ GCD = lambda a, b: (GCD(b, a % b) if a % b else b)
 
 def gcd(a, b):
     if a % b:
-        retrun gcd(b, a % b)
+        return gcd(b, a % b)
     else:
         return b
 ```  
